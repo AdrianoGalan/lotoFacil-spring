@@ -49,7 +49,7 @@ public class RoboService {
 
 		try (Playwright playwright = Playwright.create()) {
 			Browser browser = playwright.chromium()
-					.launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(50));
+					.launch(new BrowserType.LaunchOptions().setHeadless(true).setSlowMo(50));
 			Page page = browser.newPage();
 
 			page.navigate("https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx");
