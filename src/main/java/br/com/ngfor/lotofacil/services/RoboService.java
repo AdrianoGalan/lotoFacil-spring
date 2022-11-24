@@ -35,6 +35,8 @@ public class RoboService {
 
 	// Leitura da pagina da lotoFacil e algoritimo para gravar no banco
 	private List<Resultado> buscaResultadosPage(int ConcursoInicial) {
+		
+		System.out.println("passou aki ......");
 
 		String saida;
 		int tamanhoSaida = 0;
